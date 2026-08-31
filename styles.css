@@ -100,9 +100,14 @@ h1 span { color: var(--primary); }
 .certifications { display: flex; flex-wrap: wrap; gap: 12px; }
 .certifications span, .project__tags span { padding: 10px 15px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: .82rem; font-weight: 700; }
 
-.project { overflow: hidden; display: grid; grid-template-columns: .85fr 1.15fr; }
-.project__visual { min-height: 360px; padding: 48px; position: relative; display: grid; place-items: center; background: linear-gradient(145deg, #172554, #312e81); color: white; }
+.projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.project { overflow: hidden; display: flex; flex-direction: column; }
+.project__visual { min-height: 190px; padding: 36px; position: relative; display: grid; place-items: center; background: linear-gradient(145deg, #172554, #312e81); color: white; }
 .project__visual strong { font-size: 2rem; z-index: 1; }
+.project__visual--finance { background: linear-gradient(145deg, #064e3b, #0f766e); }
+.project__visual--fraud { background: linear-gradient(145deg, #450a0a, #9f1239); }
+.project__visual--telecom { background: linear-gradient(145deg, #172554, #1d4ed8); }
+.project__visual--icdf { background: linear-gradient(145deg, #312e81, #6d28d9); }
 .project__window { position: absolute; inset: 42px; border: 1px solid rgba(255,255,255,.2); border-radius: 16px; background: rgba(255,255,255,.06); backdrop-filter: blur(5px); padding: 14px; }
 .project__window span { display: inline-block; width: 8px; height: 8px; margin-right: 5px; border-radius: 50%; background: #60a5fa; }
 .project__window span:nth-child(2) { background: #2dd4bf; }
@@ -111,12 +116,13 @@ h1 span { color: var(--primary); }
 .project__code i { width: 100px; height: 4px; background: rgba(255,255,255,.18); border-radius: 5px; }
 .project__code i:nth-child(2) { width: 145px; }
 .project__code i:nth-child(3) { width: 80px; }
-.project__content { padding: 48px; align-self: center; }
+.project__content { padding: 34px; display: flex; flex: 1; flex-direction: column; align-items: flex-start; }
 .project__content h3 { margin: 14px 0 12px; font-size: 1.55rem; }
 .project__content p { margin: 0; color: var(--muted); }
-.project__tags { display: flex; gap: 8px; margin: 24px 0; }
+.project__tags { display: flex; flex-wrap: wrap; gap: 8px; margin: 24px 0; }
 .project__tags span { padding: 5px 11px; }
 .text-link { color: var(--primary); font-weight: 800; text-decoration: none; }
+.project .text-link { margin-top: auto; }
 
 .footer { padding: 85px 0 25px; background: #07101f; color: #eef4ff; }
 .footer__content { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
@@ -136,7 +142,7 @@ h1 span { color: var(--primary); }
   .hero__intro { margin-inline: auto; }
   .hero__buttons { justify-content: center; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
-  .project { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: 1fr; }
   .project__visual { min-height: 300px; }
   .footer__content { grid-template-columns: 1fr; gap: 38px; }
 }

@@ -1,7 +1,7 @@
 # Portafolio profesional — Brayan Palacios
 
 Portafolio web personal con perfil profesional, habilidades técnicas,
-formación académica, certificaciones y datos de contacto.
+formación académica, certificaciones, proyectos verificables y datos de contacto.
 
 ## Características
 
@@ -9,6 +9,7 @@ formación académica, certificaciones y datos de contacto.
 - Modo claro y oscuro con preferencia guardada.
 - Avatar ilustrado personalizado.
 - Enlaces directos de contacto y LinkedIn.
+- Acceso centralizado a los proyectos profesionales principales.
 - HTML semántico y consideraciones de accesibilidad.
 
 ## Tecnologías

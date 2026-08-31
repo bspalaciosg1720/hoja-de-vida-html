@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio profesional de Brayan Stiven Palacios Gonzalez, estudiante de desarrollo de software.">
+  <meta name="description" content="Portafolio de Brayan Stiven Palacios Gonzalez: Python, automatización, backend, datos y desarrollo web.">
   <meta name="color-scheme" content="light dark">
   <title>Brayan Palacios | Desarrollo de Software</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,7 @@
         <span>&lt;BP /&gt;</span>
       </a>
       <div class="nav__actions">
+        <a class="nav__link" href="#proyectos">Proyectos</a>
         <a class="nav__link" href="#contacto">Contacto</a>
         <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false">
           <span class="theme-toggle__sun" aria-hidden="true">☀</span>
@@ -37,12 +38,15 @@
       <div class="hero__copy">
         <p class="eyebrow">Hola, soy</p>
         <h1>Brayan Stiven<br><span>Palacios Gonzalez</span></h1>
-        <p class="hero__role">Estudiante de desarrollo de software</p>
-        <p class="hero__intro">Interesado en crear soluciones mediante programación, automatización y desarrollo web.</p>
+        <p class="hero__role">Desarrollador de software en formación</p>
+        <p class="hero__intro">Construyo soluciones con Python, automatización web, APIs, procesamiento de datos y desarrollo web. Este portafolio reúne proyectos funcionales y documentación técnica verificable.</p>
         <div class="hero__buttons">
           <a class="button button--primary" href="mailto:bpalaciosgonzales957@gmail.com">Escríbeme</a>
           <a class="button button--secondary" href="https://www.linkedin.com/in/brayan-stiven-palacios-gonzalez-142002246" target="_blank" rel="noopener noreferrer">
             Ver LinkedIn <span aria-hidden="true">↗</span>
+          </a>
+          <a class="button button--secondary" href="https://github.com/bspalaciosg1720" target="_blank" rel="noopener noreferrer">
+            Ver GitHub <span aria-hidden="true">↗</span>
           </a>
         </div>
       </div>
@@ -64,7 +68,7 @@
     <section class="section section--tinted" id="habilidades">
       <div class="container">
         <div class="section__heading">
-          <p class="eyebrow">Lo que estoy aprendiendo</p>
+        <p class="eyebrow">Tecnologías que aplico</p>
           <h2>Habilidades técnicas</h2>
         </div>
         <div class="skills-grid">
@@ -76,17 +80,17 @@
           <article class="skill-card">
             <span class="skill-card__icon" aria-hidden="true">{ }</span>
             <h3>Programación</h3>
-            <p>Python, C# y C++</p>
+            <p>Python, FastAPI, Playwright y testing</p>
           </article>
           <article class="skill-card">
             <span class="skill-card__icon" aria-hidden="true">▤</span>
             <h3>Bases de datos</h3>
-            <p>SQL y MariaDB</p>
+            <p>SQL, MySQL y MariaDB</p>
           </article>
           <article class="skill-card">
             <span class="skill-card__icon" aria-hidden="true">⑂</span>
             <h3>Herramientas</h3>
-            <p>Git, GitHub y Packet Tracer</p>
+            <p>Git, GitHub, Docker y CI</p>
           </article>
         </div>
       </div>
@@ -136,31 +140,56 @@
       </div>
     </section>
 
-    <section class="section container" id="proyecto">
+    <section class="section container" id="proyectos">
       <div class="section__heading">
-        <p class="eyebrow">Trabajo destacado</p>
-        <h2>Proyecto</h2>
+        <p class="eyebrow">Trabajo verificable</p>
+        <h2>Proyectos destacados</h2>
       </div>
-      <article class="project card">
-        <div class="project__visual" aria-hidden="true">
-          <div class="project__window">
-            <span></span><span></span><span></span>
+      <div class="projects-grid">
+        <article class="project card">
+          <div class="project__visual project__visual--finance" aria-hidden="true"><strong>Finanzas por Voz</strong></div>
+          <div class="project__content">
+            <span class="status">Producto full stack</span>
+            <h3>Finanzas por Voz</h3>
+            <p>MVP móvil para registrar movimientos mediante lenguaje natural, con API, autenticación, presupuestos, metas, reportes y decisiones documentadas de privacidad y arquitectura.</p>
+            <div class="project__tags" aria-label="Tecnologías utilizadas"><span>FastAPI</span><span>Expo</span><span>PostgreSQL</span></div>
+            <a class="text-link" href="https://github.com/bspalaciosg1720/finanzas-por-voz-mvp" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
           </div>
-          <div class="project__code">
-            <i></i><i></i><i></i><i></i>
+        </article>
+
+        <article class="project card">
+          <div class="project__visual project__visual--fraud" aria-hidden="true"><strong>Fraud Risk API</strong></div>
+          <div class="project__content">
+            <span class="status">Machine learning</span>
+            <h3>Validador de riesgo de fraude</h3>
+            <p>Servicio de inferencia con LightGBM y FastAPI, feature engineering sin fuga temporal, clasificación por umbrales y despliegue reproducible mediante Docker.</p>
+            <div class="project__tags" aria-label="Tecnologías utilizadas"><span>Python</span><span>LightGBM</span><span>Docker</span></div>
+            <a class="text-link" href="https://github.com/bspalaciosg1720/fraud-risk-validator-brayan" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
           </div>
-          <strong>&lt;portfolio /&gt;</strong>
-        </div>
-        <div class="project__content">
-          <span class="status">Proyecto personal</span>
-          <h3>Portafolio web profesional</h3>
-          <p>Sitio web personal para presentar mi perfil, formación, habilidades y certificaciones. Construido con enfoque adaptable, accesible y compatible con modo oscuro.</p>
-          <div class="project__tags" aria-label="Tecnologías utilizadas">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        </article>
+
+        <article class="project card">
+          <div class="project__visual project__visual--telecom" aria-hidden="true"><strong>ETL Telecom</strong></div>
+          <div class="project__content">
+            <span class="status">Automatización empresarial</span>
+            <h3>Afectación masiva móvil</h3>
+            <p>Pipeline ETL que automatiza extracción web, procesamiento y validación de Excel, generación de indicadores territoriales y carga transaccional en MySQL.</p>
+            <div class="project__tags" aria-label="Tecnologías utilizadas"><span>Playwright</span><span>OpenPyXL</span><span>MySQL</span></div>
+            <a class="text-link" href="https://github.com/bspalaciosg1720/automatizacion_afectacion_masiva_movil_claro" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
           </div>
-          <a class="text-link" href="#inicio">Ver proyecto <span aria-hidden="true">↑</span></a>
-        </div>
-      </article>
+        </article>
+
+        <article class="project card">
+          <div class="project__visual project__visual--icdf" aria-hidden="true"><strong>ICDF</strong></div>
+          <div class="project__content">
+            <span class="status">Framework Python</span>
+            <h3>Descubrimiento de interfaces</h3>
+            <p>Framework modular para descubrir interfaces web, analizar endpoints y generar controladores Python, respaldado por una suite de 150 pruebas automatizadas.</p>
+            <div class="project__tags" aria-label="Tecnologías utilizadas"><span>Python</span><span>HTTPX</span><span>Pytest</span></div>
+            <a class="text-link" href="https://github.com/bspalaciosg1720/ICDF" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
